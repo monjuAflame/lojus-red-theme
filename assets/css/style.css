@@ -1,0 +1,1063 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Iujos Red
+Version:    1.1
+Last change:    10/05/2018 [fixed Float bug, vf]
+Author Name:	Aflame ORG
+Primary use:    Landing Page
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Number of contents]
+
+1. Reset Css
+2. Dafult Css
+3. Button Css
+4. All Background image And Background Overly Css
+5. All Section Title Css
+6. Header Section Css
+7. Feature Section Css
+8. About Section Css
+9. Fun fect and Client Section Css
+10. Pricing table Css
+11. App Download Section Css
+12. Team Section Css
+13. Contact Css
+14. Footer Css
+15. Slick Slider Css
+
+-------------------------------------------------------------------*/
+
+/*
+==========================================
+    1--Reset Css
+==========================================
+*/
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+a:hover{text-decoration: none;}
+body{
+	font-family: 'Lato', sans-serif;
+}
+/*
+==========================================
+    2--Dafult Css
+==========================================
+*/
+
+.sectionPadding {
+	padding: 100px 0;
+}
+.marginTopHundred{
+    margin-top: 100px;
+}
+.marginBottomHundred {
+	margin-bottom: 100px;
+}
+
+.container-flued video {
+	width: 100%;
+}
+
+.redBgColor{
+	background: #ed2024;
+	color: #fff;
+}
+.redColor{
+	color: #ed2024;
+}
+.blackColor{
+	color: #000;
+}
+.whiteColor{
+	color: #fff;
+}
+
+/*
+==========================================
+    3--Button Css
+==========================================
+*/
+.lujosBtn {
+	border: none;
+	font-family: Open Sans;
+	font-weight: bold;
+	border-radius: 68px;
+	position: relative;
+	padding: 15px 35px;
+}
+.largeBtn {
+	padding: 0 50px;
+	font-size: 18px;
+	height: 60px;
+	letter-spacing: 1.2px;
+	border-radius: 30px 30px;
+}
+.smallBtn {
+	font-size: 18px;
+	font-family: Lato;
+	padding: 0 45px;
+	margin: 20px 0 0;
+	font-weight: bold;
+	letter-spacing: 1.5px;
+	border-radius: 42px;
+	height: 50px;
+}
+.lujosBtn:hover {
+  background: #ed2024;
+  color: #fff;
+    box-shadow: 0 0 5px -1px #000;
+}
+
+
+
+/*
+==========================================
+    4--All Background image And Background Overly Css
+==========================================
+*/
+.paralaxBg {
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background-attachment: fixed; 
+}
+.headerSectionBg {
+	background: url(../img/topbg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.funFactSectionBg {
+	background: url(../img/funfact.jpg) 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.appDownloadSectionBg {
+	background: url(../img/dnload.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.SectionBgOverly {
+	background: #414141;
+	opacity: .9;
+}
+.SectionBgOverlyFunpect{
+	background: #1b1b1b;
+	opacity: .9;
+}
+
+
+/*
+==========================================
+    5--All Section Title Css
+==========================================
+*/
+.sectionTitle {
+	margin-bottom: 100px;
+}
+.sectionTitleText {
+	/*text-align: center;*/
+}
+
+.leftBorder {
+	position: relative;
+}
+.leftBorder::after {
+	position: absolute;
+	left: 0;
+	bottom: -17px;
+	height: 5px;
+	content: "";
+	background: #ed2024;
+	width: 18%;
+}
+.middleBorder {
+	position: relative;
+}
+.middleBorder::after {
+	position: absolute;
+	left: 40%;
+	bottom: -17px;
+	height: 5px;
+	content: "";
+	background: #ed2024;
+	width: 18%;
+}
+
+.sectionTitleText h3 {
+	font-size: 36px;
+	color: #000;
+	margin: 0;
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.sectionTitleText p {
+	font-size: 17.97px;
+	color: #505050;
+	margin: 0;
+	font-family: Lato;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	line-height: 27.96px;
+}
+.whiteColor h3, .whiteColor p {
+    color: #fff;
+}
+
+.aboutSection p {
+	color: #505050;
+}
+
+/*
+==========================================
+    6--Header Section Css
+==========================================
+*/
+
+.header{
+	position: relative;
+}
+.topSectionHeader {
+	padding: 25px 0;
+	/* background: #fff; */
+}
+
+.desktopLogo a {
+	font-size: 42px;
+	font-weight: 900;
+	font-family: raleway;
+	color: #ed2024;
+	line-height: .8;
+}
+.mobileLogo a {
+	font-size: 42px;
+	font-weight: 900;
+	font-family: raleway;
+	color: #ed2024;
+	line-height: .8;
+}
+.mainMenuMobile {
+	display: none;
+}
+
+.is-sticky .topSectionHeaderMainMenu, .topSectionHeaderMainMenu, .topSectionHeader, .WorkSectionContentSingle:hover, .WorkSectionContentSingle:hover i, .WorkSectionContentSingle, .WorkSectionContentSingle i, .featureContentSingle:hover h4, .featureContentSingle h4, .featureContentSingle i, .featureContentSingle:hover i,.featureContentSingle, .featureContentSingle:hover, .is-sticky .topSectionHeader, .iojusBtn:hover, .iojusBtn, .pricingSectionContentTable:hover .pricingSectionContentTablePrice{
+    transition: all 0.6s ease 0s;
+    -webkid-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    -moz-transition: all 0.6s ease 0s;
+}
+
+
+/*
+	Header Content Left
+*/
+.topSectionContent {
+	padding: 125px 0 200px 0;
+}
+.topSectionContentText {
+	padding:0;
+}
+.topSectionContentText h2 {
+	color: #fff;
+	font-family: raleway;
+	font-weight: 900;
+	font-size: 50px;
+}
+.topSectionContentText p {
+	color: #fff;
+	font-size: 18px;
+	font-family: Lato;
+	margin: 40px 0 45px 0;
+	font-weight: 400;
+	letter-spacing: .8px;
+}
+
+/*
+	Header Content Wright
+*/
+.appMigrationSlider {
+	text-align: left;
+	padding: 45px 25px 30px 65px;
+	/* border: 2px solid #878787; */
+	background: #fff;
+	border-radius: 30px;
+}
+
+.WorkSectionContentSingle i {
+  font-size: 30px;
+  color: #ed2024;
+}
+.WorkSectionContentSingle h4 {
+	font-size: 18px;
+	font-family: Open Sans;
+	margin: 0;
+	padding: 30px 0 20px 0;
+	color: #2c2c2c;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.WorkSectionContentSingle p {
+	font-size: 14px;
+	font-family: Lato;
+	color: #2c2c2c;
+	margin: 0;
+	letter-spacing: .8px;
+	line-height: 24px;
+}
+
+/* menu */
+.topSectionHeaderMainMenu {
+	background: #fff;
+	display: block;
+	overflow: hidden;
+	padding: 35px 0 38px 0;
+	border-radius: 72px;
+	position: absolute;
+	top: -50px;
+	width: 100%;
+	box-shadow: 1px 0 8px -3px #000;
+}
+
+.mainMenuDesktop ul {
+	margin: 0;
+	padding: 0 100px;
+	list-style: none;
+}
+.mainMenuDesktop ul li {
+	padding: 0 27px 0 27px;
+	position: relative;
+	float: left;
+}
+.mainMenuDesktop ul li a {
+	color: #2c2c2c;
+	font-size: 18px;
+	font-family: Lato;
+	padding: 0;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.mainMenuDesktop ul li.active a {
+	color: #2c2c2c;
+	text-decoration: underline;
+}
+.mainMenuDesktop ul li a:hover {
+	background: none;
+}
+.sticky-wrapper {
+	position: absolute;
+	width: 97.5%;
+	z-index: 99999;
+	top: 0;
+}
+.is-sticky .topSectionHeader:after {
+	background: #fff;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
+}
+.is-sticky .topSectionHeader {
+	padding: 10px 0;
+	box-shadow: 0px 0 6px -2px #000;
+}
+.is-sticky .desktopLogo {
+	height: 30px;
+}
+.is-sticky .desktopLogo img{
+	height: 100%;
+}
+.is-sticky .topSectionHeaderMainMenu {
+	padding: 10px 0;
+}
+.is-sticky .mainMenuDesktop ul li {
+	padding: 0 32px 0 32px;
+}
+.is-sticky .mainMenuDesktop ul li a {
+	font-size: 16px;
+}
+/*
+==========================================
+    7--Feature Section Css
+==========================================
+*/
+.featureSection {
+	background: #f2f2f2;
+}
+.featureContentSingle {
+	height: auto;
+	padding: 40px 0 45px 30px;
+	background: #fff;
+}
+
+
+.featureContentSingleText i {
+	font-size: 30px;
+	position: relative;
+	color: #fff;
+	float: right;
+	z-index: 1;
+	margin: -15px 0 0 0;
+	padding: 6px 20px;
+	top: 0;
+}
+.featureContentSingleText i::after {
+	position: absolute;
+	right: 0;
+	height: 45px;
+	width: 65px;
+	content: "";
+	background: #ed2024;
+	z-index: -1;
+	/* padding: 18px 13px 9px 13px; */
+	top: 0;
+}
+.featureContentSingle h4 {
+	font-size: 18px;
+	font-family: Open Sans;
+	font-weight: bold;
+	color: #2c2c2c;
+	margin: 0;
+	padding: 38px 0;
+	position: relative;
+	text-transform: capitalize;
+}
+.featureContentSingleText p {
+	font-size: 15px;
+	font-family: Lato;
+	color: #000;
+	font-weight: 400;
+	letter-spacing: .8px;
+	line-height: 24px;
+}
+
+
+/*
+==========================================
+    8--About Section Css
+==========================================
+*/
+.aboutSection {
+	position: relative;
+	background: #fff;
+}
+.aboutSectionVedio video {
+	width: 100%;
+}
+.aboutSectionContentText p {
+	font-size: 15px;
+	color: #000;
+	font-family: Lato;
+	font-weight: 400;
+	letter-spacing: .5px;
+	line-height: 28px;
+}
+.aboutSectionContentText p span {
+	margin-top: 30px;
+	display: block;
+}
+
+
+
+/*
+==========================================
+    9--Fun fect and app downlad Css
+==========================================
+*/
+
+.funFactSection  {
+	position: relative;
+}
+
+.funFactSectionContentSingle {
+  text-align: center;
+}
+.funFectIteams ul li {
+	float: left;
+	width: 50%;
+}
+
+.funFactSectionContentSingle i {
+  font-size: 50px;
+  color: #fff;
+}
+.funFactSectionContentSingle h2 {
+	padding: 40px 0 20px 0;
+	margin: 0;
+	color: #fff;
+	font-size: 27.93px;
+	font-family: Lato;
+	font-weight: bold;
+}
+.funFactSectionContentSingle p {
+	font-size: 17.96px;
+	font-family: Open Sans;
+	color: #fff;
+	margin: 0;
+	font-weight: bold;
+}
+/* app Download */
+.appDownloadSectionContent {
+	margin-top: 100px;
+}
+
+.appDownloadSection{
+    position: relative;
+}
+.appDownloadSectionContentText {
+	/* float: left; */
+	padding: 25px 25px;
+	border: 2px solid #fff;
+	border-radius: 0;
+	color: #fff;
+	display: block;
+	overflow: hidden;
+}
+.daonloadIcon {
+	float: left;
+}
+.daonloadIcon i {
+	font-size: 65px;
+	color: #fff;
+}
+
+.appDaonloadIconText {
+	float: left;
+	padding: 0 0 0 25px;
+	color: #fff;
+}
+.appDaonloadIconText p {
+	font-size: 18px;
+	font-family: Lato;
+	margin: 2px 0 10px 0;
+	font-weight: bold;
+}
+.appDaonloadIconText h4 {
+	font-size: 28px;
+	font-family: Open Sans;
+	font-weight: bold;
+}
+.appDownloadSectionContentText:hover {
+	background: #ed2024;
+    border: none;
+    box-shadow: 1px 0 5px -2px #000;
+}
+.appDownloadSectionContentText:hover, .appDownloadSectionContentText, .appDownloadSectionContentText:hover .appDaonloadIconText h4, .appDownloadSectionContentText:hover .appDaonloadIconText p,  .appDownloadSectionContentText:hover .daonloadIcon i, .appDaonloadIconText h4, .appDaonloadIconText p,  .daonloadIcon i{
+    transition: all 0.6s ease 0s;
+    -webkid-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    -moz-transition: all 0.6s ease 0s;
+}
+/*
+==========================================
+    10--Pricing table Css
+==========================================
+*/
+
+.pricingSectionContentTable {
+	text-align: center;
+	/* box-shadow: 1px 0px 8px -5px #000; */
+	/* border-radius: 50px; */
+	color: #757575;
+}
+.pricingSectionContentTablePrice {
+	padding: 30px 0;
+	/* border-radius: 50px 50px 0 0; */
+	color: #000;
+	background: #f1f1f1;
+}
+.pricingSectionContentTablePrice h4 {
+	font-family: Open Sans;
+	font-weight: 700;
+    font-size: 18px;
+}
+.pricingSectionContentTablePrice h2 {
+	font-family: Lato;
+	font-size: 28px;
+	font-weight: 700;
+	padding: 12px 0;
+}
+.pricingSectionContentTablePrice p {
+	font-family: Lato;
+	Font-weight: 400;
+	font-size: 14px;
+    
+}
+
+.pricingSectionContentTablePriceDetails {
+	padding: 45px 0;
+	/* border-radius: 0 0 50px 50px; */
+}
+.pricingSectionContentTablePriceDetails ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.pricingSectionContentTablePriceDetails ul li {
+	font-size: 14px;
+	color: #757575;
+	padding: 0 0 22px 0;
+	font-family: Lato;
+	font-weight: 400;
+}
+
+.pricingSectionContentTable:hover {
+	box-shadow: 4px 3px 9px -8px #000;
+}
+.pricingSectionContentTable:hover .pricingSectionContentTablePrice {
+	background: #ed2024;
+	color: #fff;
+}
+.pricingSectionContentTable:hover .pricingSectionContentTablePriceDetails {
+	background: #f1f1f1;
+	color: #fff;
+}
+.pricingSectionContentTable:hover .lujosBtn{
+    background: #ed2024;
+    color: #fff;
+}
+
+
+
+
+
+/*
+==========================================
+    11--Client Secction Css
+==========================================
+*/
+.clientSection {
+	background: #f1f1f1;
+}
+
+
+.clientSectionContentText {
+	padding: 40px 38px 40px 30px;
+	background: #fff;
+	display: block;
+	overflow: hidden;
+	box-shadow: 4px 3px 9px -8px #000;
+}
+.clientComment p {
+	font-size: 14px;
+	font-weight: 400;
+	font-family: Lato;
+	color: #858585;
+	line-height: 28.08px;
+	letter-spacing: .5px;
+	margin: 10px 0 0 0;
+}
+.ClientContentDetails {
+	float: right;
+	/* display: block; */
+	/* overflow: hidden; */
+	/* position: relative; */
+	margin: 40px 0 0 0;
+}
+.ClientContentDetails p {
+	font-size: 14px;
+	color: #757575;
+	font-family: Lato;
+	font-style: italic;
+}
+
+.ClientContentDetails h4 {
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+	position: relative;
+	font-family: Open Sans;
+	line-height: 27.08px;
+}
+.ClientContentDetails h4::after {
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 3px;
+	left: -17px;
+	top: 13px;
+	background: #000;
+}
+
+
+.starIcon {
+  overflow: hidden;
+  display: block;
+}
+.starIcon ul {
+	list-style: none;
+	padding: 0 0 0 0;
+	margin: 0;
+}
+.starIcon ul li {
+  float: left;
+  padding: 0 5px;
+  font-size: 20px;
+}
+.starIcon ul li i.fillIconColor {
+	color: #7600ff;
+}
+.starIcon ul li i.unfillIconColor {
+	color: #ff0000;
+}
+
+
+/*
+==========================================
+    12--Team Section Css
+==========================================
+*/
+.teamSection {
+	background: #fff;
+}
+.teamSectionContentSingle {
+	width: auto;
+	height: auto;
+	position: relative;
+	width: 100%;
+}
+
+.teamSectionContentSingleImg {
+	width: 100%;
+	height: 255px;
+}
+.teamSectionContentSingleImg img {
+	height: 100%;
+	width: 100%;
+}
+.teamSectionContentSingleDetails {
+	text-align: center;
+	padding: 40px 0;
+}
+.teamSectionContentSingleDetails h4 {
+	font-size: 18px;
+	color: #000;
+	margin: 0;
+	font-family: Lato;
+	font-weight: 700;
+}
+.teamSectionContentSingleDetails p {
+	font-size: 14px;
+	color: #000;
+	margin: 0;
+	padding: 18px 0 0 0;
+	font-family: Lato;
+	font-weight: 400;
+}
+
+
+
+.teamSectionContentSingleImg::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 255px;
+	content: "";
+	background: #4d4d4d;
+	z-index: 9;
+	opacity: .7;
+    display: none;
+}
+.hoverItemTeamSectionContentSingleDetails {
+	display: none;
+	overflow: hidden;
+	padding: 0 45px;
+}
+.hoverItemTeamSectionContentSingleDetails ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.hoverItemTeamSectionContentSingleDetails ul li {
+	float: left;
+	margin: 0 9.5px 0 9.5px;
+	width: 36px;
+	height: 36px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	padding: 4px 0 0 7px;
+}
+.hoverItemTeamSectionContentSingleDetails ul li:hover {
+     background: #fff;
+}
+.hoverItemTeamSectionContentSingleDetails ul li:hover  a i{
+     color: #ed2024;
+}
+.hoverItemTeamSectionContentSingleDetails ul li a i {
+  font-size: 20px;
+  color: #fff;
+}
+
+.teamSectionContentSingle:hover .teamSectionContentSingleImg::before {
+
+     display: block;
+}
+.teamSectionContentSingle:hover .hoverItemTeamSectionContentSingleDetails {
+	display: block;
+	position: absolute;
+	top: 30%;
+	z-index: 999;
+	width: 100%;
+}
+.teamSectionContentSingle:hover .teamSectionContentSingleDetails {
+	background: #4d4d4d;
+}
+.teamSectionContentSingle:hover .teamSectionContentSingleDetails h4{
+    color: #fff;
+}
+.teamSectionContentSingle:hover .teamSectionContentSingleDetails p{
+    color: #fff;
+}
+.teamSectionContentSingleDetails p, .teamSectionContentSingleDetails h4{
+    transition: all 0.6s ease 0s;
+    -webkid-transition: all 0.6s ease 0s;
+    -o-transition: all 0.6s ease 0s;
+    -moz-transition: all 0.6s ease 0s;
+}
+
+/*
+==========================================
+    13--Contact Css
+==========================================
+*/
+
+.getTouchSection {
+	background: #f1f1f1;
+}
+
+.getTouchSectionContentContact {
+	background: #fff;
+	padding: 35px 65px;
+	border-radius: 20px;
+	display: block;
+	overflow: hidden;
+}
+.input-form {
+  position: relative;
+  margin-bottom: 40px;
+}
+.input-form i {
+  position: absolute;
+  top: 11px;
+  left: 7px;
+  font-size: 18px;
+  color: #505050;
+}
+.input-form input, textarea {
+	padding: 7px 0 0 50px;
+	border-top: none;
+	border-left: none;
+	border-bottom: 1px solid #757575;
+	border-right: none;
+	width: 100%;
+	font-size: 18px;
+	font-family: Lato;
+	color: #505050;
+	font-weight: 700;
+}
+.sendBtn {
+	padding: 0 30px;
+	background: #ed2024;
+	color: #fff;
+	font-family: Open Sans;
+	font-size: 18px;
+	font-weight: bold;
+	float: left;
+	border-radius: 30px 30px 30px 30px;
+	height: 50px;
+}
+
+
+.getTouchSectionContentContactInfo {
+	background: #fff;
+	padding: 50px 65px;
+	border-radius: 17px;
+}
+
+.getTouchSectionContentContactInfo ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  position: relative;
+}
+.getTouchSectionContentContactInfo ul li {
+   margin-bottom: 50px; 
+}
+.getTouchSectionContentContactInfo ul li i {
+  position: absolute;
+  font-size: 28px;
+  left: 0;
+  color: #505050;
+}
+.getTouchSectionContentContactInfo ul li p {
+	font-size: 17.97px;
+	font-family: Lato;
+	padding: 0 0 0 60px;
+	color: #000;
+	font-weight: 700;
+	line-height: 27.5px;
+}
+.getTouchSectionContentContactInfo .notPadding {
+	margin: 0;
+}
+
+
+/*
+==========================================
+    14--Footer Css
+==========================================
+*/
+
+.footerSection {
+	background: #414141;
+}
+.footerSectionContent{
+    padding: 50px 0;
+}
+.footerSectionContentCopyright p {
+	margin: 0;
+	font-size: 18px;
+	color: #fff;
+	font-family: Lato;
+	font-weight: bold;
+}
+.footerSectionContentMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footerSectionContentMenu ul li {
+	float: left;
+	padding: 0 0 0 40px;
+}
+.footerSectionContentMenu ul li a {
+	font-size: 14px;
+	color: #fff;
+	font-family: Lato;
+	font-weight: 400;
+}
+
+
+/*
+==========================================
+    15--Slick Slider Css
+==========================================
+*/
+
+
+.sin-testiImage {
+    display: inline-block;
+    margin-bottom: 2px;
+    outline: medium none;
+    position: relative;
+}
+
+.sin-testiImage img {
+    /* border: 1px solid #fff; */
+    /* border-radius: 50%; */
+    cursor: pointer;
+    display: inline-block !important;
+    height: 390px;
+    margin-bottom: 0;
+    margin-top: 36px;
+    outline: 0 none;
+    width: 80%;
+    margin: 50px 0 0 0;
+    opacity: .5;
+}
+
+.sin-testiImage.slick-current img {
+    height: 500px;
+    margin-top: 0;
+    opacity: 1;
+    width: 260px;
+}
+
+
+.slick-prev, .slick-next {
+    background: #000;
+    border: medium none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 15px;
+    height: 27px;
+    outline: medium none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    border-radius: 50%;
+}
+
+
+.appMigrationSlider .slick-prev {
+    left: 60%;
+    top: 100%;
+    margin-top: 25px;
+}
+.appMigrationSlider .slick-next {
+    right: 15%;
+    background: #ed2024;
+    top: 100%;
+    margin-top: 25px;
+}
+
+.slick-prev {
+    left: -15px;
+}
+.slick-next {
+    right: -15px;
+    background: #4c86c6;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
